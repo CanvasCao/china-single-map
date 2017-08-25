@@ -1,0 +1,32 @@
+{
+  "name": "china-single-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline --colors --content-base ./",
+    "build": "webpack --progress --colors",
+    "watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "d3": "^4.10.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
+    "json-loader": "^0.5.7",
+    "lodash": "^4.17.4",
+    "normalize.css": "^7.0.0",
+    "style-loader": "^0.18.2",
+    "swiper": "^3.4.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "url-loader": "^0.5.9",
+    "walkway.js": "^0.0.6",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^1.15.0"
+  }
+}

@@ -1,0 +1,55 @@
+* {
+    font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft Yahei;
+}
+
+#header {
+    height: 5rem;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    background: #3f3f40;
+    /*background: -webkit-linear-gradient(#191919, #3f3f40); !* Safari 5.1 - 6.0 *!*/
+}
+
+#header-logo {
+    height: 3rem;
+    background: url("../media/images/logo.png") no-repeat;
+    background-size: contain;
+}
+
+.big-title {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    color: #363636;
+    text-align: center;
+    font-weight: bold;
+    padding: 2.4rem 0;
+    box-sizing: border-box;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #363636;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto 2rem;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+#age-bar {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#range-slider-container {
+    margin: 3rem 10%;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+svg {
+    display: block;
+}
