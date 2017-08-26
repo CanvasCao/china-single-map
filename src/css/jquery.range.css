@@ -61,7 +61,7 @@
 }
 
 .slider-container .scale ins {
-    font-size: 9px;
+    font-size: 1.2rem;
     text-decoration: none;
     position: absolute;
     left: 0;
@@ -91,7 +91,7 @@
 
 .theme-green .back-bar .selected-bar {
     border-radius: 2px;
-    background-color: #4987BA;
+    background-color: #2b93bf;
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbdfade', endColorstr='#ff76fabc', GradientType=0);
 }
@@ -100,10 +100,10 @@
     width: 2rem;
     height: 2rem;
     top: -0.5rem;
+    border-radius: 50%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 10px;
     border: 1px solid #AAA;
     background-color: #e7e7e7;
     background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);

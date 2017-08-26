@@ -50,6 +50,26 @@
     word-wrap: break-word;
 }
 
+#map {
+    position: relative;
+}
+
+#bjDesc {
+    position: absolute;
+    top: 22%;
+    left: 44%;
+    font-size: 1rem;
+    /*border: 1px solid #000;*/
+}
+#shDesc {
+    position: absolute;
+    top: 63%;
+    left: 76%;
+    font-size: 1rem;
+    /*border: 1px solid #000;*/
+}
+
+
 svg {
     display: block;
 }

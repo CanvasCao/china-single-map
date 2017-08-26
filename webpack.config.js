@@ -16,7 +16,6 @@ module.exports = {
         port: 3003,
     },
     externals: {
-        lodash: '_',
         jquery: '$'
     },
     module: {
@@ -37,7 +36,13 @@ module.exports = {
             {
                 test: /\.json$/,
                 loader: 'json-loader'
-            }
+            },
+            {
+                test: /\.(csv|tsv)$/,
+                use: [
+                    'csv-loader'
+                ],
+            },
             // {
             //     test: /\.(png|jpg|gif)$/,
             //     use: [
