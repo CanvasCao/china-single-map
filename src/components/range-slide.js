@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import _ from 'lodash'
 import {changeMap} from './map'
 require('../js/jquery.range')
 
@@ -20,9 +19,13 @@ export function appendSlide() {
         onstatechange: function (e) {
             //一开始20-20也会触发onstatechange...
             //e 20-40
-            $age.html(e.split(',').join('-'));
+            var array = e.split(',');
+            if (array[1] == '70') array[1] = '65以上'
+            $age.html(array.join('-'));
             changeMap(e);
         }
-    }).jRange('setValue', '20,30')
+    })
+    .jRange('setValue', '20,30')
 
+    // changeMap('20,30')
 }

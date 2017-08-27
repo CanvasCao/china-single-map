@@ -2,6 +2,10 @@
     font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft Yahei;
 }
 
+body {
+    padding-bottom: 5rem;
+}
+
 #header {
     height: 5rem;
     box-sizing: border-box;
@@ -22,8 +26,12 @@
     color: #363636;
     text-align: center;
     font-weight: bold;
-    padding: 2.4rem 0;
+    /*padding: 2.4rem 0;*/
     box-sizing: border-box;
+}
+
+.big-title img {
+    width: 100%;
 }
 
 .sub-title {
@@ -38,14 +46,21 @@
 }
 
 #age-bar {
-    font-size: 2.5rem;
-    width: 80%;
-    margin: 0 auto;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto 0.5rem;
     font-weight: bold;
 }
 
+#age-bar-desc {
+    font-size: 1.2rem;
+    color: #999999;
+    width: 90%;
+    margin: 0 auto;
+}
+
 #range-slider-container {
-    margin: 3rem 10%;
+    margin: 2rem 10%;
     white-space: nowrap;
     word-wrap: break-word;
 }
@@ -54,13 +69,19 @@
     position: relative;
 }
 
+#map .desc {
+    font-size: 0.8rem;
+    color: #999999;
+}
+
 #bjDesc {
     position: absolute;
-    top: 22%;
-    left: 44%;
+    top: 25%;
+    left: 43%;
     font-size: 1rem;
     /*border: 1px solid #000;*/
 }
+
 #shDesc {
     position: absolute;
     top: 63%;
@@ -69,6 +90,80 @@
     /*border: 1px solid #000;*/
 }
 
+#gdDesc {
+    position: absolute;
+    top: 77%;
+    left: 46%;
+    font-size: 1rem;
+    /*border: 1px solid #000;*/
+}
+
+.cut-off {
+    width: 100%;
+    height: 4rem;
+    background: url('../media/images/cut-off.jpg') no-repeat;
+    background-size: contain;
+    margin: 2rem auto;
+}
+
+.item-box {
+    margin: 2rem 0;
+}
+
+.item-box .sec-title {
+    width: 90%;
+    margin: 0 auto 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+}
+
+.item-box img {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.item-box .item-content {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.reference {
+    width: 90%;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #999;
+}
+
+.author {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+
+}
+
+.author img {
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#guideG {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 10px;
+    border: 1px solid #000;
+}
 
 svg {
     display: block;
