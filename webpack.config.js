@@ -21,6 +21,15 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    plugins: ['transform-runtime'],
+                    presets: ['es2015', 'stage-2']
+                }
+            },
+            {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
