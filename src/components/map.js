@@ -6,8 +6,6 @@ import allProvinceSingles from '../data/allProvinceSingles.json'
 // console.log(allProvinceSingles)
 //公式 男-女/总 结果是一个小数...
 
-var maleColor = '#2b93bf';
-var femaleColor = '#ff1654';
 
 function getSinglesNumberFromAgeStrAndProvinceName(ageStr, provinceName) {
     var ageLow = ageStr.split(',')[0]
@@ -42,6 +40,7 @@ function getSinglesNumberFromAgeStrAndProvinceName(ageStr, provinceName) {
     result.realNumber = result.number * 10000
     return result;
 }
+
 function changeDesc(provinceName, realNumber) {
     var bjDesc = document.getElementById('bjDesc');
     var shDesc = document.getElementById('shDesc');
@@ -62,11 +61,17 @@ function changeDesc(provinceName, realNumber) {
         gdDesc.querySelectorAll('.male')[0].innerHTML = male;
     }
 }
+
 function getRadiusFromRealNumber(realNumber) {
-    return Math.sqrt(Math.abs(realNumber / 10000) * 2) + 'rem';
+    var num = Math.sqrt(Math.abs(realNumber / 10000) * 2)
+    // return num.toFixed(2) + 'rem';
+    num=num.toFixed(2);
+    return num*12+'px';
 }
 
 export function appendMap() {
+    var maleColor = '#2b93bf';
+    var femaleColor = '#ff1654';
     var windowWidth = document.documentElement.clientWidth;
     var windowHeight = document.documentElement.clientHeight;
     var projection = d3.geoMercator()
@@ -189,7 +194,10 @@ export function appendMap() {
         .attr('font-size', '1rem')
         .text('女')
 }
+
 export function changeMap(ageStr) {
+    var maleColor = '#2b93bf';
+    var femaleColor = '#ff1654';
     var cs = d3.select('#mainG').selectAll('circle')
 
     cs.transition()

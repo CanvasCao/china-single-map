@@ -13,7 +13,7 @@ export function appendContent() {
     document.querySelectorAll('.big-title')[0].innerHTML = '<img/>';
     document.querySelectorAll('.big-title img')[0].src = title;
 
-    document.querySelectorAll('.sub-title')[0].innerHTML = '经常有智商情商的女性朋友抱怨 “怎么找个靠谱的男朋友这么难！”，最近属羊、博士、非京户的女性也被放在了中国式相亲鄙视链的底端。男朋友真的难找吗？今天是七夕——中国传统情人节，还没有找到对象的朋友，下面这张全国“单身狗”为你提供了点参考。';
+    document.querySelectorAll('.sub-title')[0].innerHTML = '经常有智商情商双高的女性朋友抱怨“怎么找个靠谱的男朋友这么难！”，最近属羊、博士、非京户的女性也被放在了中国式相亲鄙视链的底端。男朋友真的难找吗？今天是七夕——中国传统情人节，还没有找到对象的朋友，下面这张全国“单身狗”地图为你提供了点参考。';
 
     document.querySelector('#age-bar').innerHTML = "单身年龄，<span class='age'></span>";
     document.querySelector('#age-bar-desc').innerHTML = "拖动滑块，可以看到各省市、各年龄段里每一个万个单身中有多出多少男性或女性，圆圈越大，竞争越激烈，越多单身注定要打光棍。";
